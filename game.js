@@ -189,10 +189,10 @@ function createGhosts() {
 }
 
 function keyHandler(e) {
-    if (e.key === 'ArrowRight' || e.key === 'd') pacman.setKey(0);
-    else if (e.key === 'ArrowDown' || e.key === 's') pacman.setKey(1);
-    else if (e.key === 'ArrowLeft' || e.key === 'a') pacman.setKey(2);
-    else if (e.key === 'ArrowUp' || e.key === 'w') pacman.setKey(3);
+    if (e.key === 'ArrowRight' || e.key.toLowerCase() === 'd' || e.key.toLowerCase() === 'в') pacman.setKey(0);
+    else if (e.key === 'ArrowDown' || e.key.toLowerCase() === 's' || e.key.toLowerCase() === 'ы') pacman.setKey(1);
+    else if (e.key === 'ArrowLeft' || e.key.toLowerCase() === 'a' || e.key.toLowerCase() === 'ф') pacman.setKey(2);
+    else if (e.key === 'ArrowUp' || e.key.toLowerCase() === 'w' || e.key.toLowerCase() === 'ц') pacman.setKey(3);
 }
 
 function escapeHandler(e) {
