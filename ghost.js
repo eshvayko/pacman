@@ -226,7 +226,7 @@ class Ghost {
 
     update(time) {
         if (this.isInTunnel()) ghostSpeed = 3;
-        let add = ghostSpeed*time/1000; ghostSpeed = 7;
+        let add = ghostSpeed*time/1000; ghostSpeed = baseGhostSpeed;
         this.calculateDirection(time);
         if (this.direction !== this.nextDirection) this.tryToMoveKey(add)
         let lastX = this.x, lastY = this.y;

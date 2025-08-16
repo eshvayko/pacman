@@ -41,7 +41,8 @@ let lives = 3;
 let score = 0;
 let highScore = localStorage.getItem('highScore456890795349507') === null ? 0 : localStorage.getItem('highScore456890795349507'); // ну чтоб вдруг никто не изменил
 let pacmanSpeed = 7;
-let ghostSpeed = 7;
+let baseGhostSpeed = 7;
+let ghostSpeed = baseGhostSpeed
 let pacmanSprite = document.querySelector('#pacman');
 let ghostSpite = document.querySelector('#ghost');
 let actorSize = scale*1.4;
